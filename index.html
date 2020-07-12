@@ -77,7 +77,6 @@ section.content .col {
     background-position: center center!important;
 }
 .project-card .cover {
-    background: linear-gradient(0, #948D86, transparent);
     height: 100%;
     width: 100%;
 }
@@ -112,8 +111,8 @@ a.btn-outline {
     border-radius: 50px;
     background: rgba(255,255,255,0.1);
 }
-.project-card a:hover {
-    text-decoration: none;
+.projects a:hover {
+    text-decoration: none!important;
 }
 .project-card p:focus {
     outline: none!important;
@@ -149,88 +148,7 @@ a.btn-outline {
 	</div>	
 </section>
 
-<section class="projects container-fluid">
-	<div class="row">
-		<div class="col col-12 col-sm-6 col-lg-4">
-			<a href="#" target="_blank">
-				<div class="project-card" style="background: url('https://mir-s3-cdn-cf.behance.net/projects/808/b69ce589280433.Y3JvcCwxNDAwLDEwOTUsMCwxMw.jpg')">
-					<div class="cover d-flex">
-						<div class="info align-self-end">
-							<p class="fields">// Web Design, Web Development</p>
-							<p class="title">Griffin & Lauren: Wedding Website</p>
-							<a class="btn-outline">View Project <i class="fal fa-long-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="col col-12 col-sm-6 col-lg-4">
-			<a href="#" target="_blank">
-				<div class="project-card" style="background: url('https://mir-s3-cdn-cf.behance.net/projects/808/b69ce589280433.Y3JvcCwxNDAwLDEwOTUsMCwxMw.jpg')">
-					<div class="cover d-flex">
-						<div class="info align-self-end">
-							<p class="fields">// Web Design, Web Development</p>
-							<p class="title">Griffin & Lauren: Wedding Website</p>
-							<a class="btn-outline">View Project <i class="fal fa-long-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="col col-12 col-sm-6 col-lg-4">
-			<a href="#" target="_blank">
-				<div class="project-card" style="background: url('https://mir-s3-cdn-cf.behance.net/projects/808/b69ce589280433.Y3JvcCwxNDAwLDEwOTUsMCwxMw.jpg')">
-					<div class="cover d-flex">
-						<div class="info align-self-end">
-							<p class="fields">// Web Design, Web Development</p>
-							<p class="title">Griffin & Lauren: Wedding Website</p>
-							<a class="btn-outline">View Project <i class="fal fa-long-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="col col-12 col-sm-6 col-lg-4">
-			<a href="#" target="_blank">
-				<div class="project-card" style="background: url('https://mir-s3-cdn-cf.behance.net/projects/808/b69ce589280433.Y3JvcCwxNDAwLDEwOTUsMCwxMw.jpg')">
-					<div class="cover d-flex">
-						<div class="info align-self-end">
-							<p class="fields">// Web Design, Web Development</p>
-							<p class="title">Griffin & Lauren: Wedding Website</p>
-							<a class="btn-outline">View Project <i class="fal fa-long-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="col col-12 col-sm-6 col-lg-4">
-			<a href="#" target="_blank">
-				<div class="project-card" style="background: url('https://mir-s3-cdn-cf.behance.net/projects/808/b69ce589280433.Y3JvcCwxNDAwLDEwOTUsMCwxMw.jpg')">
-					<div class="cover d-flex">
-						<div class="info align-self-end">
-							<p class="fields">// Web Design, Web Development</p>
-							<p class="title">Griffin & Lauren: Wedding Website</p>
-							<a class="btn-outline">View Project <i class="fal fa-long-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-		<div class="col col-12 col-sm-6 col-lg-4">
-			<a href="#" target="_blank">
-				<div class="project-card" style="background: url('https://mir-s3-cdn-cf.behance.net/projects/808/b69ce589280433.Y3JvcCwxNDAwLDEwOTUsMCwxMw.jpg')">
-					<div class="cover d-flex">
-						<div class="info align-self-end">
-							<p class="fields">// Web Design, Web Development</p>
-							<p class="title">Griffin & Lauren: Wedding Website</p>
-							<a class="btn-outline">View Project <i class="fal fa-long-arrow-right"></i></a>
-						</div>
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-</section>
+<section class="projects container-fluid"><div class="row"></div></section>
 
 <section class="content container">
 	<div class="row">
@@ -242,7 +160,8 @@ a.btn-outline {
 	</div>	
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 <script type="text/javascript">
 
 var asterisk = document.getElementById('asterisk');
@@ -274,27 +193,47 @@ $(document).ready(function() {
 
 var userID = 'siminski';
 var apiKey = 'v8SNqxsyD70hgx1EXIQPjmjiQVe9K7HQ'
-var queryURL = 'https://api.behance.net/v2/users/' + userID + '/projects?api_key=' + apiKey + '&callback=myCallbackFunction';
+var queryURL = 'https://api.behance.net/v2/users/' + userID + '/projects?api_key=' + apiKey;
 
 // We then created an AJAX call
 $.ajax({
   url: queryURL,
   method: "GET"
 }).then(function(response) {
+	
+	var projects = response.projects;
+	console.log(projects);
 
-	response.forEach(function(i) {
+	projects.forEach(function(i) {
+		
+		var fieldsArray = i.fields;
+		var fieldsString = '';
+		fieldsArray.forEach(function(i) {	
+			fieldsString = fieldsString.concat(i);					
+		});
+		
+		var r = i.colors[0].r;
+		var g = i.colors[0].g;
+		var b = i.colors[0].b;	
+		
+		if (r > 100) {r = r - 100;} else {r = 0;}
+		if (g > 100) {g = g - 100;} else {g = 0;}
+		if (b > 100) {b = b - 100;} else {b = 0;}	
+			
+		var color = 'rgb(' + r + ',' + g + ',' + b + ')';
 		
 		var col = $('<div>').addClass('col col-12 col-sm-6 col-lg-4');
-		var a = $('<a>').attr('target', '_blank').attr('href', '#');
+		var a = $('<a>').attr('target', '_blank').attr('href', i.url);
 		
 		var card = $('<div>').addClass('project-card');
-		card.attr('style', 'background: url(https://mir-s3-cdn-cf.behance.net/projects/808/b69ce589280433.Y3JvcCwxNDAwLDEwOTUsMCwxMw.jpg');
+		card.attr('style', 'background-image: url("' + i.covers.original + '");');
 		
 		var cover = $('<div>').addClass('cover d-flex');
+		cover.attr('style', 'background: linear-gradient(0deg, ' + color + ', transparent);');
 		var info = $('<div>').addClass('info align-self-end');
 		
-		var fields = $('<p>').addClass('fields').text('Web Design, Web Development');
-		var title = $('<p>').addClass('title').text('Griffin & Lauren: Wedding Website');		
+		var fields = $('<p>').addClass('fields').text(fieldsString);
+		var title = $('<p>').addClass('title').text(i.name);		
 		var button = $('<a>').addClass('btn-outline').html('View Project <i class="fal fa-long-arrow-right"></i>');
 		
 		info.append(fields, title, button);
@@ -302,7 +241,7 @@ $.ajax({
 		card.append(cover);
 		a.append(card);
 		col.append(a);
-		$('section.projects .row').append(col);		
+		$('section.projects .row').append(col);	
 		
 	});
 
