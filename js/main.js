@@ -1,7 +1,6 @@
+// get logo asterisk to spin - convert this to jquery
 var asterisk = document.getElementById('asterisk');
-
 (function(){
-
   var throttle = function(type, name, obj){
     var obj = obj || window;
     var running = false;
@@ -14,11 +13,9 @@ var asterisk = document.getElementById('asterisk');
       });
     };
     obj.addEventListener(type, func);
-  };
-  
+  }; 
   throttle("scroll", "optimizedScroll");
 })();
-
 window.addEventListener('optimizedScroll', function(){  
 	asterisk.style.transform = 'rotate(-' + window.pageYOffset + 'deg)';
 });
@@ -35,6 +32,8 @@ $(document).ready(function() {
 		'I definitely prefer Sketch (sorry Adobe).',
 		'Google Spreadsheets spark joy.'		
 	];
+	
+	var projects = [];
 
 	var userID = 'siminski';
 	var apiKey = 'v8SNqxsyD70hgx1EXIQPjmjiQVe9K7HQ'
@@ -46,8 +45,10 @@ $(document).ready(function() {
 	  method: "GET"
 	}).then(function(response) {
 		
-		var projects = response.projects;
-		console.log(projects);
+		// limit number of projects being pulled
+		for (var i = 0; i < 12; i++) {
+			projects.push(response.projects[i]);
+		}
 	
 		projects.forEach(function(i) {
 			
@@ -57,18 +58,6 @@ $(document).ready(function() {
 				fieldsString = fieldsString.concat(i);					
 			});
 			
-/*
-			var r = i.colors[0].r;
-			var g = i.colors[0].g;
-			var b = i.colors[0].b;	
-			
-			if (r > 100) {r = r - 100;} else {r = 0;}
-			if (g > 100) {g = g - 100;} else {g = 0;}
-			if (b > 100) {b = b - 100;} else {b = 0;}	
-				
-			var color = 'rgb(' + r + ',' + g + ',' + b + ')';
-*/
-			
 			var col = $('<div>').addClass('col col-12 col-sm-6 col-lg-4');
 			var a = $('<a>').attr('target', '_blank').attr('href', i.url);
 			
@@ -76,7 +65,6 @@ $(document).ready(function() {
 			card.attr('style', 'background-image: url("' + i.covers.original + '");');
 			
 			var cover = $('<div>').addClass('cover d-flex').attr('data-aos', 'fade');
-			//cover.attr('style', 'background: linear-gradient(0deg, ' + color + ', transparent);');	
 			var info = $('<div>').addClass('info align-self-end');
 			
 			var fields = $('<p>').addClass('fields').attr('data-aos', 'fade-down').attr('data-aos-duration', '300');
