@@ -20,7 +20,7 @@ h2 {
 }
 h2 span {
 	font-weight: 700;
-	color: #53808B;
+	color: #3B8A9D;
 }
 p {
     font-size: 17px;
@@ -45,7 +45,7 @@ p.comment a, p.comment a:hover {
     color: #aaa;
 }
 p a:hover, p.comment a:hover {
-    color: #53808B;
+    color: #3B8A9D;
 }
 /* —————————— LOGO —————————— */
 #asterisk, #letterG {
@@ -127,7 +127,7 @@ ul.nav a {
     letter-spacing: 0.5px;
 }
 ul.nav a:hover {
-    color: #53808B;
+    color: #3B8A9D;
 }
 ul.nav a.active {
     font-weight: 700;

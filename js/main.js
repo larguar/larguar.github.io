@@ -57,6 +57,7 @@ $(document).ready(function() {
 				fieldsString = fieldsString.concat(i);					
 			});
 			
+/*
 			var r = i.colors[0].r;
 			var g = i.colors[0].g;
 			var b = i.colors[0].b;	
@@ -66,6 +67,7 @@ $(document).ready(function() {
 			if (b > 100) {b = b - 100;} else {b = 0;}	
 				
 			var color = 'rgb(' + r + ',' + g + ',' + b + ')';
+*/
 			
 			var col = $('<div>').addClass('col col-12 col-sm-6 col-lg-4');
 			var a = $('<a>').attr('target', '_blank').attr('href', i.url);
@@ -92,7 +94,7 @@ $(document).ready(function() {
 			$('section.projects .row').append(col);	
 			
 			card.on('mouseover', function() {
-				cover.attr('style', 'background: linear-gradient(0deg, ' + color + ', transparent);').attr('data-aos', '');
+				cover.attr('style', 'background: linear-gradient(0deg, ' + '#186577 32%' + ', transparent);').attr('data-aos', '');
 				fields.text('// ' + fieldsString).attr('data-aos', '');
 				title.text(i.name).attr('data-aos', '');
 				button.addClass('btn-outline').html('View Project <i class="fal fa-long-arrow-right"></i>').attr('data-aos', '');
