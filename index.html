@@ -7,135 +7,31 @@
 
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 <script src="https://kit.fontawesome.com/72e044a073.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://use.typekit.net/qgx4mod.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 
-<title>Page Title</title>
+<title>Lauren Siminski Guardala</title>
 
-<style>
-
-div#asterisk, div#letterG {
-    position: absolute;
-}
-div#asterisk {
-    display: flex;
-    align-items: start;
-}
-div#letterG {
-    padding: 6px 0 0 42px;
-}
-.logo {
-    position: fixed;
-    left: 40px;
-    top: 30px;
-    z-index: 1;
-}
-#asterisk img {
-	height: 40px;
-	width: 40px;
-}
-
-div#letterG img {
-	height: 75px;
-	width: 59px;
-}
-ul.nav {
-    position: absolute;
-    top: 40px;
-    right: 50px;
-}
-section.content {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-section.content:nth-of-type(1) {
-    padding-top: 160px;
-}
-section.projects .col:nth-of-type(4n) .project-card {
-    background: #666;
-    height: 400px;
-}
-section.projects .col:nth-of-type(4n - 1) .project-card {
-    background: #777;
-    height: 400px;
-}
-section.projects .col:nth-of-type(4n - 2)  .project-card {
-    background: #888;
-    height: 400px;
-}
-section.projects .col:nth-of-type(4n - 3) .project-card {
-    background: #999;
-    height: 400px;
-}			
-section.projects .col {
-    padding: 0;
-}
-section.content .col {
-    max-width: 660px;
-    margin: 0 auto;
-}
-.project-card {
-    background-size: cover!important;
-    background-position: center center!important;
-}
-.project-card .cover {
-    height: 100%;
-    width: 100%;
-}
-.info.align-self-end {
-    width: 100%;
-    padding: 40px 30px;
-}
-.fields {
-    font-size: 13px;
-    line-height: 1.2;
-    color: #fff;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: 600;
-    margin-bottom: 0;
-    padding-bottom: 10px;
-}
-.title {
-    font-size: 32px;
-    line-height: 1.2;
-    color: #fff;
-    margin-bottom: 0;
-    padding-bottom: 30px;
-}
-a.btn-outline {
-    font-size: 17px;
-    line-height: 1;
-    border: 1px solid #fff;
-    color: #fff!important;
-    padding: 10px 24px;
-    border-radius: 50px;
-    background: rgba(255,255,255,0.1);
-}
-.projects a:hover {
-    text-decoration: none!important;
-}
-.project-card p:focus {
-    outline: none!important;
-}
-</style>
-	
-    
 </head>
 <body>
 
-<header class="container-fluid">
-	<div class="logo">
+<button class="menu-toggle closed"></button>
+<div class="logo">
+	<a href="index.html">
 		<div id="asterisk"><img src="img/asterisk.svg"></div>
-		<div id="letterG"><img src="img/g.svg"></div>  	
-	</div>
+		<div id="letterG"><img src="img/g.svg"></div>
+	</a>
+</div>
+<header class="container-fluid" data-aos="fade">
 	<ul class="nav">
-		<li><a href="#">Portfolio</a></li>
-		<li><a href="#">Resume</a></li>
-		<li><a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
-		<li><a href="#" target="_blank"><i class="fab fa-dribbble"></i></a></li>
-		<li><a href="#" target="_blank"><i class="fab fa-behance"></i></a></li>
-		<li><a href="#" target="_blank"><i class="fab fa-codepen"></i></a></li>
-		<li><a href="#" target="_blank"><i class="fab fa-github"></i></a></li>
+		<li><a class="active" href="index.html">Portfolio</a></li>
+		<li><a href="resume.html">Resume</a></li>
+		<li><a href="https://www.linkedin.com/in/laurensiminski/" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+		<li><a href="https://dribbble.com/siminski" target="_blank"><i class="fab fa-dribbble"></i></a></li>
+		<li><a href="https://www.behance.net/siminski" target="_blank"><i class="fab fa-behance"></i></a></li>
+		<li><a href="https://codepen.io/siminski" target="_blank"><i class="fab fa-codepen"></i></a></li>
+		<li><a href="https://github.com/siminski" target="_blank"><i class="fab fa-github"></i></a></li>
 	</ul>
 </header>
 
@@ -154,102 +50,15 @@ a.btn-outline {
 	<div class="row">
 		<div class="col">
 			<h2>Looking for more work?</h2>
-			<p>These are my most recent projects. Check out my <a href="#" target="_blank">Behance</a> for a full archive of projects I’ve worked on.</p>
+			<p>These are my most recent projects. Check out my <a href="#" target="_blank">Behance</a> for a full archive of projects I’ve documented.</p>
 			<p class="comment">// Get in touch – <a href="#">Email</a> or <a href="#" target="_blank">LinkedIn</a></p>
 		</div>
 	</div>	
 </section>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<script type="text/javascript">
-
-var asterisk = document.getElementById('asterisk');
-
-(function(){
-
-  var throttle = function(type, name, obj){
-    var obj = obj || window;
-    var running = false;
-    var func = function(){
-      if (running){ return; }
-      running = true;
-      requestAnimationFrame(function(){
-        obj.dispatchEvent(new CustomEvent(name));
-        running = false;
-      });
-    };
-    obj.addEventListener(type, func);
-  };
-  
-  throttle("scroll", "optimizedScroll");
-})();
-
-window.addEventListener('optimizedScroll', function(){  
-	asterisk.style.transform = 'rotate(-' + window.pageYOffset + 'deg)';
-});
-
-$(document).ready(function() {
-
-var userID = 'siminski';
-var apiKey = 'v8SNqxsyD70hgx1EXIQPjmjiQVe9K7HQ'
-var queryURL = 'https://api.behance.net/v2/users/' + userID + '/projects?api_key=' + apiKey;
-
-// We then created an AJAX call
-$.ajax({
-  url: queryURL,
-  method: "GET"
-}).then(function(response) {
-	
-	var projects = response.projects;
-	console.log(projects);
-
-	projects.forEach(function(i) {
-		
-		var fieldsArray = i.fields;
-		var fieldsString = '';
-		fieldsArray.forEach(function(i) {	
-			fieldsString = fieldsString.concat(i);					
-		});
-		
-		var r = i.colors[0].r;
-		var g = i.colors[0].g;
-		var b = i.colors[0].b;	
-		
-		if (r > 100) {r = r - 100;} else {r = 0;}
-		if (g > 100) {g = g - 100;} else {g = 0;}
-		if (b > 100) {b = b - 100;} else {b = 0;}	
-			
-		var color = 'rgb(' + r + ',' + g + ',' + b + ')';
-		
-		var col = $('<div>').addClass('col col-12 col-sm-6 col-lg-4');
-		var a = $('<a>').attr('target', '_blank').attr('href', i.url);
-		
-		var card = $('<div>').addClass('project-card');
-		card.attr('style', 'background-image: url("' + i.covers.original + '");');
-		
-		var cover = $('<div>').addClass('cover d-flex');
-		cover.attr('style', 'background: linear-gradient(0deg, ' + color + ', transparent);');
-		var info = $('<div>').addClass('info align-self-end');
-		
-		var fields = $('<p>').addClass('fields').text(fieldsString);
-		var title = $('<p>').addClass('title').text(i.name);		
-		var button = $('<a>').addClass('btn-outline').html('View Project <i class="fal fa-long-arrow-right"></i>');
-		
-		info.append(fields, title, button);
-		cover.append(info);
-		card.append(cover);
-		a.append(card);
-		col.append(a);
-		$('section.projects .row').append(col);	
-		
-	});
-
-});
-
-});
-
-</script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="js/main.js"></script>
 
 </body>
 </html>
