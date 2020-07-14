@@ -24,14 +24,21 @@ $(document).ready(function() {
 	
 	var funFacts = [
 		'I’m not afraid to use open source fonts.',
-		'I made an Instagram page for my dog and I\'m not ashamed (shameless plug: <a href="https://www.instagram.com/rengstagram/" target="_blank">@rengstagram</a>)',
-		'I enjoy building out a website more than I enjoy designing it (most of the time).',
+		'I made an Instagram page for my dog and I\'m not ashamed => <a href="https://www.instagram.com/rengstagram/" target="_blank">@rengstagram</a>.',
+		'I usually enjoy building out a website more than I enjoy designing it.',
 		'My favorite color is <span style="color: #333">#333</span>.',
 		'I’m a Virgo so I like it when things are perfect.',
-		'I\'m a self preservation enneagram type 3',
+		'I\'m a Self Preservation Enneagram Type 3.',
 		'I definitely prefer Sketch (sorry Adobe).',
 		'Google Spreadsheets spark joy.'		
 	];
+	
+	var fact = funFacts[Math.floor(Math.random() * funFacts.length)];
+	
+	if (fact) {
+		var factP = $('<p>').addClass('comment').html('// Fun Fact: ' + fact);
+		$('#main .col').append(factP);
+	}
 	
 	var projects = [];
 
@@ -115,6 +122,17 @@ $(document).ready(function() {
 			$('ul.nav').attr('style', 'opacity: 0;').attr('data-aos', 'fade').attr('data-aos-duration', '50');
 		}
 	});
+	
+	var linkedInURL = 'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=771dziejse2pk0&redirect_uri=https://siminski.github.io/&scope=r_fullprofile';
+	
+/*
+	$.ajax({
+	  url: linkedInURL,
+	  method: "GET"
+	}).then(function(response) {
+		console.log(response);
+	});
+*/
 
 	AOS.init();
 
