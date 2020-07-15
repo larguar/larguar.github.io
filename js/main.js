@@ -22,6 +22,7 @@ window.addEventListener('optimizedScroll', function(){
 
 $(document).ready(function() {
 	
+	// array of fun facts
 	var funFacts = [
 		'I’m not afraid to use open source fonts.',
 		'I made an Instagram page for my dog and I\'m not ashamed => <a href="https://www.instagram.com/rengstagram/" target="_blank">@rengstagram</a>.',
@@ -33,8 +34,8 @@ $(document).ready(function() {
 		'Google Spreadsheets spark joy.'		
 	];
 	
-	var fact = funFacts[Math.floor(Math.random() * funFacts.length)];
-	
+	// pull a random fact from array and output it on the page
+	var fact = funFacts[Math.floor(Math.random() * funFacts.length)];	
 	if (fact) {
 		var factP = $('<p>').addClass('comment').html('// Fun Fact: ' + fact);
 		$('#main .col').append(factP);
@@ -105,21 +106,32 @@ $(document).ready(function() {
 			
 		});
 	
+	}).catch(function(error) {
+		
+		var message404 = $('<div>').addClass('container m-auto');
+		$('.projects .row').append(message404);
+		message404.html('<div class="row"><div class="col"><h3>Oops, Behance API isn\'t loading.</h3><p class="lead">Have no fear! You can still view my Portfolio <a href="https://www.behance.net/siminski" target="_blank">here</a>.</p></div></div>');
+		$('.projects').addClass('error');
+		
 	});
 	
 	$('.menu-toggle').on('click', function(event) {
 		event.preventDefault();
 		
 		if ($(this).hasClass('closed')) {
+			
 			$(this).removeClass('closed');
 			$(this).addClass('open');
 			$('header').attr('style', 'background: rgba(255,255,255,0.9); z-index: 1;').attr('data-aos', '');
 			$('ul.nav').attr('style', 'opacity: 1;').attr('data-aos', '').attr('data-aos-duration', '1000');
+			
 		} else {
+			
 			$(this).removeClass('open');
 			$(this).addClass('closed');
 			$('header').attr('style', 'background: rgba(255,255,255,0); z-index: -1;').attr('data-aos', 'fade');
 			$('ul.nav').attr('style', 'opacity: 0;').attr('data-aos', 'fade').attr('data-aos-duration', '50');
+			
 		}
 	});
 	

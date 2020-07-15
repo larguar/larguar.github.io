@@ -10,7 +10,7 @@ html {
 body {
 	font-family: proxima-nova, sans-serif;
 }
-h2, p.title {
+h2, h3, p.title {
 	font-family: pt-serif, serif;
 }
 h2 {
@@ -21,6 +21,13 @@ h2 {
 h2 span {
 	font-weight: 700;
 	color: #3B8A9D;
+}
+h3 {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    color: #3B8A9D;
 }
 p {
     font-size: 17px;
@@ -145,7 +152,7 @@ ul.nav i {
 .content:nth-of-type(1) {
     padding-top: 160px;
 }
-.content .col {
+.content .col, .projects.error .container .col {
     max-width: 660px;
     margin: 0 auto;
 }
@@ -203,6 +210,17 @@ ul.nav i {
 .project-card p:focus {
     outline: none!important;
 }
+/* —————————— ERROR —————————— */
+.projects.error .col {
+    padding: 0 15px;
+}
+.projects.error {
+    background: rgba(59, 138, 157, 0.1);
+    padding: 120px 0;
+}
+
+
+
 @media (max-width: 991px) {
 
 }
