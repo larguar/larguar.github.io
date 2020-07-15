@@ -69,7 +69,7 @@ $(document).ready(function() {
 			image: 'https://media.giphy.com/media/HwmDZaI4YEeZ2/giphy.gif'
 		},
 		11: {
-			fact: 'I started learning code in 7th grade because of Myspace.',
+			fact: 'I started learning code in 7th grade so I could have a cooler Myspace than any of my friends.',
 			image: 'https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif'
 		},
 		12: {
@@ -91,7 +91,7 @@ $(document).ready(function() {
 	var factIndex = Math.floor(Math.random() * factLength);	
 	if (factIndex >= 0) {
 		var factP = $('<p>').addClass('comment').html('// fun fact: ' + funFacts[factIndex].fact);
-		var factTooltip = $('<div>').attr('id', 'tooltip').attr('data-aos', 'fade');
+		var factTooltip = $('<div>').attr('id', 'tooltip');
 		factP.append(factTooltip);
 		$('#main .col').append(factP);
 		// controls tooltip
@@ -103,24 +103,7 @@ $(document).ready(function() {
 		});
 	}
 	
-	var projects = [];
-
-	var userID = 'siminski';
-	var apiKey = 'v8SNqxsyD70hgx1EXIQPjmjiQVe9K7HQ';
-	var queryURL = 'https://api.behance.net/v2/users/' + userID + '/projects?api_key=' + apiKey;
-	
-	// We then created an AJAX call
-	$.ajax({
-	  url: queryURL,
-	  method: "GET",
-	  dataType: 'jsonp'
-	}).then(function(response) {
-		
-		// limit number of projects being pulled
-		for (var i = 0; i < 18; i++) {
-			projects.push(response.projects[i]);
-		}
-	
+	function outputProjects(projects) {	
 		projects.forEach(function(i) {
 			
 			var col = $('<div>').addClass('col col-12 col-sm-6 col-lg-4');
@@ -160,9 +143,30 @@ $(document).ready(function() {
 				button.removeClass('btn-outline').html('').attr('data-aos', 'fade').attr('data-aos-duration', '250');
 				button.attr('style', 'padding: 10px 24px;');
 			});
-			
-		});
+		});		
+	};
 	
+	var projects = [];
+
+	var userID = 'siminski';
+	var apiKey = 'v8SNqxsyD70hgx1EXIQPjmjiQVe9K7HQ';
+	var queryURL = 'https://api.behance.net/v2/users/' + userID + '/projects?api_key=' + apiKey;
+	
+	// We then created an AJAX call
+	$.ajax({
+	  url: queryURL,
+	  method: "GET",
+	  dataType: 'jsonp'
+	}).then(function(response) {
+		
+		// limit number of projects being pulled
+		for (var i = 0; i < 18; i++) {
+			projects.push(response.projects[i]);
+		}
+		
+		outputProjects(projects);
+		localStorage.setItem("Projects", JSON.stringify(response.projects));
+
 	}).catch(function(error) {
 		
 		var message404 = $('<div>').addClass('container m-auto');
