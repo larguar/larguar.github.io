@@ -33,7 +33,7 @@ $(document).ready(function() {
 			image: 'https://media.giphy.com/media/ZZf4oUBf0bBvNNmaDF/giphy.gif'
 		},
 		2: {
-			fact: 'My favorite color is <span data-img="london.jpg">#333</span>.',
+			fact: 'My favorite color is #222.',
 			image: 'https://media.giphy.com/media/ToMjGpvx0uOlm6H9RqU/giphy.gif'
 		},
 		3: {
@@ -69,7 +69,7 @@ $(document).ready(function() {
 			image: 'https://media.giphy.com/media/HwmDZaI4YEeZ2/giphy.gif'
 		},
 		11: {
-			fact: 'I started learning code in 7th grade so I could have a cooler Myspace than any of my friends.',
+			fact: 'I started learning code in 7th grade so I could have a cooler Myspace than all of my friends.',
 			image: 'https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif'
 		},
 		12: {
@@ -104,6 +104,7 @@ $(document).ready(function() {
 	}
 	
 	function outputProjects(projects) {	
+		
 		projects.forEach(function(i) {
 			
 			var col = $('<div>').addClass('col col-12 col-sm-6 col-lg-4');
@@ -129,7 +130,8 @@ $(document).ready(function() {
 			col.append(a);
 			$('section.projects .row').append(col);	
 			
-			card.on('mouseover', function() {
+			card.on('mouseover', function(e) {
+				e.preventDefault();
 				cover.attr('style', 'background: linear-gradient(0deg, ' + '#186577 32%' + ', transparent);').attr('data-aos', '');
 				fields.text('// ' + i.fields.join(', ')).attr('data-aos', '');
 				title.text(i.name).attr('data-aos', '');
@@ -143,7 +145,7 @@ $(document).ready(function() {
 				button.removeClass('btn-outline').html('').attr('data-aos', 'fade').attr('data-aos-duration', '250');
 				button.attr('style', 'padding: 10px 24px;');
 			});
-		});		
+		});	
 	};
 	
 	var projects = [];
@@ -152,7 +154,6 @@ $(document).ready(function() {
 	var apiKey = 'v8SNqxsyD70hgx1EXIQPjmjiQVe9K7HQ';
 	var queryURL = 'https://api.behance.net/v2/users/' + userID + '/projects?api_key=' + apiKey;
 	
-	// We then created an AJAX call
 	$.ajax({
 	  url: queryURL,
 	  method: "GET",
@@ -165,7 +166,6 @@ $(document).ready(function() {
 		}
 		
 		outputProjects(projects);
-		localStorage.setItem("Projects", JSON.stringify(response.projects));
 
 	}).catch(function(error) {
 		

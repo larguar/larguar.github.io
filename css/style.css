@@ -156,6 +156,27 @@ ul.nav i {
     max-width: 660px;
     margin: 0 auto;
 }
+/* —————————— TOOLTIPS —————————— */
+#main p.comment {
+    position: relative;
+    display: inline-block;
+    margin-top: 10px;
+}
+#main p.comment:hover {
+	cursor: pointer;
+}
+#tooltip {
+    position: absolute;
+    left: 50%;
+    top: -160px;
+    width: auto;
+    height: 150px;
+    transform: translateX(-50%);
+}
+#tooltip img {
+    height: 100%;
+    width: auto;
+}
 /* —————————— PROJECTS —————————— */
 .projects .col .project-card {
     height: 400px;
@@ -177,7 +198,7 @@ ul.nav i {
 }
 .fields {
     font-size: 13px;
-    line-height: 1.2;
+    line-height: 1.35;
     color: #fff;
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -222,27 +243,6 @@ ul.nav i {
 .projects.error {
     background: rgba(59, 138, 157, 0.1);
     padding: 120px 0;
-}
-
-
-#main p.comment {
-    position: relative;
-    display: inline-block;
-}
-#main p.comment:hover {
-	cursor: pointer;
-}
-#tooltip {
-    position: absolute;
-    left: 50%;
-    top: -160px;
-    width: auto;
-    height: 150px;
-    transform: translateX(-50%);
-}
-#tooltip img {
-    height: 100%;
-    width: auto;
 }
 
 
