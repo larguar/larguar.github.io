@@ -60,12 +60,6 @@ $(document).ready(function() {
 	
 		projects.forEach(function(i) {
 			
-			var fieldsArray = i.fields;
-			var fieldsString = '';
-			fieldsArray.forEach(function(i) {	
-				fieldsString = fieldsString.concat(i);					
-			});
-			
 			var col = $('<div>').addClass('col col-12 col-sm-6 col-lg-4');
 			var a = $('<a>').attr('target', '_blank').attr('href', i.url);
 			
@@ -91,7 +85,7 @@ $(document).ready(function() {
 			
 			card.on('mouseover', function() {
 				cover.attr('style', 'background: linear-gradient(0deg, ' + '#186577 32%' + ', transparent);').attr('data-aos', '');
-				fields.text('// ' + fieldsString).attr('data-aos', '');
+				fields.text('// ' + i.fields.join(', ')).attr('data-aos', '');
 				title.text(i.name).attr('data-aos', '');
 				button.addClass('btn-outline').html('View Project <i class="fal fa-long-arrow-right"></i>').attr('data-aos', '');
 				button.attr('style', 'padding: 10px 24px;');
