@@ -23,29 +23,85 @@ window.addEventListener('optimizedScroll', function(){
 $(document).ready(function() {
 	
 	// array of fun facts
-	var funFacts = [
-		'I’m not afraid to use open source fonts.',
-		'I made an Instagram page for my dog and I\'m not ashamed => <a href="https://www.instagram.com/rengstagram/" target="_blank">@rengstagram</a>.',
-		'I usually enjoy building out a website more than I enjoy designing it.',
-		'My favorite color is <span data-img="london.jpg">#333</span>.',
-		'I’m a Virgo so I like it when things are perfect.',
-		'I\'m a Self Preservation Enneagram Type 3.',
-		'I definitely prefer Sketch (sorry Adobe).',
-		'Google Spreadsheets spark joy.',
-		'I drink my coffee black.',
-		'I\'m vegan for the animals.',
-		'I\'m currently watching Dark season 3.',
-		'I\'m currently reading White Fragility by Robin DiAngelo.'		
-	];
+	var funFacts = {
+		0: {
+			fact: 'I’m not afraid to use open source fonts.',
+			image: 'https://media.giphy.com/media/5nrWPububC3XRg30ir/giphy.gif'
+		},
+		1: {
+			fact: 'I made an Instagram for my dog and I\'m not ashamed => <a href="https://www.instagram.com/rengstagram/" target="_blank">@rengstagram</a>.',
+			image: 'https://media.giphy.com/media/ZZf4oUBf0bBvNNmaDF/giphy.gif'
+		},
+		2: {
+			fact: 'My favorite color is <span data-img="london.jpg">#333</span>.',
+			image: 'https://media.giphy.com/media/ToMjGpvx0uOlm6H9RqU/giphy.gif'
+		},
+		3: {
+			fact: 'I’m a Virgo so I like it when things are perfect.',
+			image: 'https://media.giphy.com/media/AF2BK0kTirsHsbLeqQ/giphy.gif'
+		},
+		4: {
+			fact: 'I\'m a Self Preservation Enneagram Type 3.',
+			image: 'https://media.giphy.com/media/7JTpNYu7oYGX98KJkL/giphy.gif'
+		},
+		5: {
+			fact: 'I definitely prefer Sketch (sorry Adobe).',
+			image: 'https://media.giphy.com/media/2vrGD7BtskWD8HB5BK/giphy.gif'
+		},
+		6: {
+			fact: 'Google Spreadsheets are my real passion.',
+			image: 'https://media.giphy.com/media/QnbnVPVWhzbCE/giphy.gif'
+		},
+		7: {
+			fact: 'I drink my coffee black.',
+			image: 'https://media.giphy.com/media/DQ9bqFm7hBTJS/giphy.gif'
+		},
+		8: {
+			fact: 'I\'m vegan for the animals.',
+			image: 'https://media.giphy.com/media/bympeqWadSL3G/giphy.gif'
+		},
+		9: {
+			fact: 'My favorite weather is warm thunderstorms.',
+			image: 'https://media.giphy.com/media/2wX1ZDx4ddj4zupWAQ/giphy.gif'
+		},
+		10: {
+			fact: 'If I could have any superpower, I\'d slow down time like they do in <a href="https://www.imdb.com/title/tt0157472/" target="_blank">Clockstoppers</a> so I could take more naps/breaks.',
+			image: 'https://media.giphy.com/media/HwmDZaI4YEeZ2/giphy.gif'
+		},
+		11: {
+			fact: 'I started learning code in 7th grade because of Myspace.',
+			image: 'https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif'
+		},
+		12: {
+			fact: 'I find it odd that some people *don\'t* treat their dogs like children.',
+			image: 'https://media.giphy.com/media/2Y7kJKvzLFnNFPqd5u/giphy.gif'
+		},
+		13: {
+			fact: 'I\'m currently watching Dark season 3.',
+			image: 'https://media.giphy.com/media/3oxHQwdn31M3ddjV3a/giphy.gif'
+		},
+		14: {
+			fact: 'I\'m currently reading White Fragility by Robin DiAngelo.',
+			image: 'https://media.giphy.com/media/lSITTVHg3VMSpEU6Cd/giphy.gif'
+		}
+	};	
 	
-	// pull a random fact from array and output it on the page
-	var fact = funFacts[Math.floor(Math.random() * funFacts.length)];	
-	if (fact) {
-		var factP = $('<p>').addClass('comment').html('// fun fact: ' + fact);
-		var tooltip = $('<div>').attr('id', 'tooltip');
-		$('#main .col').append(factP, tooltip);
-	}
-	
+	// pull a random fact and output it on the page
+	var factLength = Object.keys(funFacts).length;
+	var factIndex = Math.floor(Math.random() * factLength);	
+	if (factIndex >= 0) {
+		var factP = $('<p>').addClass('comment').html('// fun fact: ' + funFacts[factIndex].fact);
+		var factTooltip = $('<div>').attr('id', 'tooltip').attr('data-aos', 'fade');
+		factP.append(factTooltip);
+		$('#main .col').append(factP);
+		// controls tooltip
+		factP.on('mouseover', function() {
+			factTooltip.html('<img src="' + funFacts[factIndex].image + '">');
+		});
+		factP.on('mouseout', function() {
+			factTooltip.html('');
+		});
+	}	
 	var projects = [];
 
 	var userID = 'siminski';
@@ -122,7 +178,7 @@ $(document).ready(function() {
 			
 			$(this).removeClass('closed');
 			$(this).addClass('open');
-			$('header').attr('style', 'background: rgba(255,255,255,0.9); z-index: 1;').attr('data-aos', '');
+			$('header').attr('style', 'background: rgba(255,255,255,0.9); z-index: 1;').attr('data-aos', '').attr('data-aos-duration', '50');
 			$('ul.nav').attr('style', 'opacity: 1;').attr('data-aos', '').attr('data-aos-duration', '1000');
 			
 		} else {

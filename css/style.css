@@ -37,7 +37,7 @@ p {
 }
 p.comment {
     font-weight: 600;
-    line-height: 1.2;
+    line-height: 1.4;
     font-style: italic;
     color: #aaa;
     margin-top: 20px;
@@ -223,6 +223,28 @@ ul.nav i {
     background: rgba(59, 138, 157, 0.1);
     padding: 120px 0;
 }
+
+
+#main p.comment {
+    position: relative;
+    display: inline-block;
+}
+#main p.comment:hover {
+	cursor: pointer;
+}
+div#tooltip {
+    position: absolute;
+    left: 50%;
+    top: -160px;
+    width: auto;
+    height: 150px;
+    transform: translateX(-50%);
+}
+div#tooltip img {
+    height: 100%;
+    width: auto;
+}
+
 
 
 
