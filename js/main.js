@@ -27,7 +27,7 @@ $(document).ready(function() {
 		'I’m not afraid to use open source fonts.',
 		'I made an Instagram page for my dog and I\'m not ashamed => <a href="https://www.instagram.com/rengstagram/" target="_blank">@rengstagram</a>.',
 		'I usually enjoy building out a website more than I enjoy designing it.',
-		'My favorite color is <span style="color: #333">#333</span>.',
+		'My favorite color is <span data-img="london.jpg">#333</span>.',
 		'I’m a Virgo so I like it when things are perfect.',
 		'I\'m a Self Preservation Enneagram Type 3.',
 		'I definitely prefer Sketch (sorry Adobe).',
@@ -38,19 +38,21 @@ $(document).ready(function() {
 	var fact = funFacts[Math.floor(Math.random() * funFacts.length)];	
 	if (fact) {
 		var factP = $('<p>').addClass('comment').html('// Fun Fact: ' + fact);
-		$('#main .col').append(factP);
+		var tooltip = $('<div>').attr('id', 'tooltip');
+		$('#main .col').append(factP, tooltip);
 	}
 	
 	var projects = [];
 
 	var userID = 'siminski';
-	var apiKey = 'v8SNqxsyD70hgx1EXIQPjmjiQVe9K7HQ'
+	var apiKey = 'v8SNqxsyD70hgx1EXIQPjmjiQVe9K7HQ';
 	var queryURL = 'https://api.behance.net/v2/users/' + userID + '/projects?api_key=' + apiKey;
 	
 	// We then created an AJAX call
 	$.ajax({
 	  url: queryURL,
-	  method: "GET"
+	  method: "GET",
+	  dataType: 'jsonp'
 	}).then(function(response) {
 		
 		// limit number of projects being pulled
