@@ -101,7 +101,8 @@ $(document).ready(function() {
 		factP.on('mouseout', function() {
 			factTooltip.html('');
 		});
-	}	
+	}
+	
 	var projects = [];
 
 	var userID = 'siminski';
