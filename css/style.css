@@ -232,7 +232,7 @@ ul.nav i {
 #main p.comment:hover {
 	cursor: pointer;
 }
-div#tooltip {
+#tooltip {
     position: absolute;
     left: 50%;
     top: -160px;
@@ -240,7 +240,7 @@ div#tooltip {
     height: 150px;
     transform: translateX(-50%);
 }
-div#tooltip img {
+#tooltip img {
     height: 100%;
     width: auto;
 }
