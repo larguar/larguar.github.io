@@ -31,13 +31,17 @@ $(document).ready(function() {
 		'I’m a Virgo so I like it when things are perfect.',
 		'I\'m a Self Preservation Enneagram Type 3.',
 		'I definitely prefer Sketch (sorry Adobe).',
-		'Google Spreadsheets spark joy.'		
+		'Google Spreadsheets spark joy.',
+		'I drink my coffee black.',
+		'I\'m vegan for the animals.',
+		'I\'m currently watching Dark season 3.',
+		'I\'m currently reading White Fragility by Robin DiAngelo.'		
 	];
 	
 	// pull a random fact from array and output it on the page
 	var fact = funFacts[Math.floor(Math.random() * funFacts.length)];	
 	if (fact) {
-		var factP = $('<p>').addClass('comment').html('// Fun Fact: ' + fact);
+		var factP = $('<p>').addClass('comment').html('// fun fact: ' + fact);
 		var tooltip = $('<div>').attr('id', 'tooltip');
 		$('#main .col').append(factP, tooltip);
 	}
@@ -56,7 +60,7 @@ $(document).ready(function() {
 	}).then(function(response) {
 		
 		// limit number of projects being pulled
-		for (var i = 0; i < 12; i++) {
+		for (var i = 0; i < 18; i++) {
 			projects.push(response.projects[i]);
 		}
 	
@@ -89,7 +93,7 @@ $(document).ready(function() {
 				cover.attr('style', 'background: linear-gradient(0deg, ' + '#186577 32%' + ', transparent);').attr('data-aos', '');
 				fields.text('// ' + i.fields.join(', ')).attr('data-aos', '');
 				title.text(i.name).attr('data-aos', '');
-				button.addClass('btn-outline').html('View Project <i class="fal fa-long-arrow-right"></i>').attr('data-aos', '');
+				button.addClass('btn-outline').html('View Project').attr('data-aos', '');
 				button.attr('style', 'padding: 10px 24px;');
 			});
 			card.on('mouseout', function() {
