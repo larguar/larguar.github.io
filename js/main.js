@@ -69,7 +69,7 @@ $(document).ready(function() {
 			image: 'https://media.giphy.com/media/HwmDZaI4YEeZ2/giphy.gif'
 		},
 		11: {
-			fact: 'I started learning code in 7th grade so I could have a cooler Myspace than all of my friends.',
+			fact: 'I started learning how to code in 7th grade so I could have a cooler Myspace page than all of my friends.',
 			image: 'https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif'
 		},
 		12: {
