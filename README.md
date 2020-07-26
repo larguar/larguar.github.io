@@ -1,5 +1,7 @@
 # Portfolio Website
-It’s hard enough to keep up with updating a portfolio website when it’s built in a content management system, so it’s no surprise my past Github-based portfolios haven’t been updated as frequently as they should’ve been. My goal for my new site was to make adding new work as easy and efficient as possible so I could do it more often. Utilizing the Behance API, I was able to automatically pull my projects from my Behance Portfolio. As a designer, I’m expected to update both my portfolio website and my Behance portfolio regularly, so I decided this was the most efficient route to take. Now, when I make any updates on my Behance portfolio – whether I’m adding a new project or reordering existing projects – my portfolio site automatically updates with those changes.
+It’s hard enough to keep up with updating a portfolio website when it’s built in a content management system, so it’s no surprise my past Github-based portfolios haven’t been updated as frequently as they should’ve been. My goal for my new site was to make adding new work as easy and efficient as possible so I could do it more often.
+
+Utilizing the Behance API, I was able to automatically pull my projects from my Behance Portfolio. As a designer, I’m expected to update both my portfolio website and my Behance portfolio regularly, so I decided this was the most efficient route to take. Now, when I make any updates on my Behance portfolio – whether I’m adding a new project or reordering existing projects – my portfolio site automatically updates with those changes.
 
 ![HTML Badge](https://img.shields.io/badge/-HTML-323795) ![CSS Badge](https://img.shields.io/badge/-CSS-01A990) ![JavaScript Badge](https://img.shields.io/badge/-JavaScript-539436) ![API Badge](https://img.shields.io/badge/-API-F58021)  
 
@@ -47,7 +49,7 @@ THEN the asterisk in my logo spins
 
 ![Application Screenshot](img/portfolio.gif)
 
-* Generate random fun fact about me on page refresh:
+* Generate new random fun fact about me on page refresh:
 
 ![Application Screenshot](img/funfacts.gif)
 
