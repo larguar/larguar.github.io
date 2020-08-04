@@ -77,12 +77,16 @@ $(document).ready(function() {
 			image: 'https://media.giphy.com/media/2Y7kJKvzLFnNFPqd5u/giphy.gif'
 		},
 		13: {
-			fact: 'I\'m currently watching Dark season 3.',
-			image: 'https://media.giphy.com/media/3oxHQwdn31M3ddjV3a/giphy.gif'
+			fact: 'I would love to learn sign language one day.',
+			image: 'https://media.giphy.com/media/xTiTnDQ4eawSG7WB6o/giphy.gif'
 		},
 		14: {
-			fact: 'I\'m currently reading White Fragility by Robin DiAngelo.',
-			image: 'https://media.giphy.com/media/lSITTVHg3VMSpEU6Cd/giphy.gif'
+			fact: 'I\'m currently watching The Twelve on Netflix.',
+			image: 'https://media.giphy.com/media/xB2aYbkJzIDMk/giphy.gif'
+		},
+		15: {
+			fact: 'I\'m currently reading Everything is Figureoutable by Marie Forleo.',
+			image: 'https://media.giphy.com/media/UQPdOze3jGzNKjNLuK/giphy.gif'
 		}
 	};	
 	
