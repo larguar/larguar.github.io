@@ -81,20 +81,22 @@ $(document).ready(function() {
 			image: 'https://media.giphy.com/media/xTiTnDQ4eawSG7WB6o/giphy.gif'
 		},
 		14: {
-			fact: 'I\'m currently watching The Twelve on Netflix.',
-			image: 'https://media.giphy.com/media/xB2aYbkJzIDMk/giphy.gif'
-		},
+			fact: 'I\'m currently re-watching SVU.',
+			image: 'https://media.giphy.com/media/3o752fFQRQh0YW4EVi/giphy.gif'
+		}/*
+,
 		15: {
 			fact: 'I\'m currently reading Everything is Figureoutable by Marie Forleo.',
 			image: 'https://media.giphy.com/media/UQPdOze3jGzNKjNLuK/giphy.gif'
 		}
+*/
 	};	
 	
 	// pull a random fact and output it on the page
 	var factLength = Object.keys(funFacts).length;
 	var factIndex = Math.floor(Math.random() * factLength);	
 	if (factIndex >= 0) {
-		var factP = $('<p>').addClass('comment').html('// fun fact: ' + funFacts[factIndex].fact);
+		var factP = $('<p>').addClass('comment').html('// conversation starter: ' + funFacts[factIndex].fact);
 		var factTooltip = $('<div>').attr('id', 'tooltip');
 		factP.append(factTooltip);
 		$('#main .col').append(factP);
