@@ -154,7 +154,7 @@ $(document).ready(function() {
 	
 	var projects = [];
 
-	var userID = 'siminski';
+	var userID = 'larguar';
 	var apiKey = 'v8SNqxsyD70hgx1EXIQPjmjiQVe9K7HQ';
 	var queryURL = 'https://api.behance.net/v2/users/' + userID + '/projects?api_key=' + apiKey;
 	
@@ -175,7 +175,7 @@ $(document).ready(function() {
 		
 		var message404 = $('<div>').addClass('container m-auto');
 		$('.projects .row').append(message404);
-		message404.html('<div class="row"><div class="col"><h3>Oops, Behance API isn\'t loading.</h3><p class="lead">Have no fear! You can still view my Portfolio <a href="https://www.behance.net/siminski" target="_blank">here</a>.</p></div></div>');
+		message404.html('<div class="row"><div class="col"><h3>Oops, Behance API isn\'t loading.</h3><p class="lead">Have no fear! You can still view my Portfolio <a href="https://www.behance.net/larguar" target="_blank">here</a>.</p></div></div>');
 		$('.projects').addClass('error');
 		
 	});
@@ -200,7 +200,7 @@ $(document).ready(function() {
 		}
 	});
 	
-	var linkedInURL = 'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=771dziejse2pk0&redirect_uri=https://siminski.github.io/&scope=r_fullprofile';
+	var linkedInURL = 'https://www.linkedin.com/oauth/v2/authorization?response_type=code&client_id=771dziejse2pk0&redirect_uri=https://larguar.github.io/&scope=r_fullprofile';
 	
 /*
 	$.ajax({
