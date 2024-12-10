@@ -1,26 +1,26 @@
-/* —————————— GENERAL —————————— */
+/* ——— GENERAL ——————————————— */
 * {
     -webkit-font-smoothing: antialiased;
 }
 html {
-  	scroll-behavior: smooth;
-	overflow-x: hidden;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
 }
-/* —————————— TYPE —————————— */
+/* ——— TYPOGRAPHY ——————————————— */
 body {
-	font-family: proxima-nova, sans-serif;
+    font-family: proxima-nova, sans-serif;
 }
 h2, h3, p.title {
-	font-family: pt-serif, serif;
+    font-family: gelica, sans-serif;
 }
 h2 {
-	font-size: 21px;
+    font-size: 21px;
     line-height: 1.5;
     margin-bottom: 10px;
 }
 h2 span {
-	font-weight: 700;
-	color: #3B8A9D;
+    font-weight: 700;
+    color: #3B8A9D;
 }
 h3 {
     font-weight: 700;
@@ -72,12 +72,12 @@ p a:hover, p.comment a:hover {
     z-index: 2;
 }
 #asterisk img {
-	height: 40px;
-	width: 40px;
+    height: 40px;
+    width: 40px;
 }
 #letterG img {
-	height: 75px;
-	width: 59px;
+    height: 75px;
+    width: 59px;
 }
 /* —————————— TOGGLE —————————— */
 button.menu-toggle {
@@ -103,10 +103,10 @@ button.menu-toggle:focus {
     left: 10px;
 }
 .menu-toggle.closed:after {
-	top: 10px;
+    top: 10px;
 }
 .menu-toggle.closed:before {
-	bottom: 10px;
+    bottom: 10px;
 }
 .menu-toggle.open:before {
     transform: rotate(45deg);
@@ -115,7 +115,7 @@ button.menu-toggle:focus {
     transform: rotate(-45deg);
 }
 .menu-toggle.closed, .menu-toggle.open {
-	display: none;
+    display: none;
 }
 /* —————————— NAV —————————— */
 ul.nav {
@@ -163,7 +163,7 @@ ul.nav i {
     margin-top: 10px;
 }
 #main p.comment:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 #tooltip {
     position: absolute;
@@ -253,7 +253,7 @@ ul.nav i {
 }
 @media screen and (max-width:767px) {
 	.menu-toggle.closed, .menu-toggle.open {
-		display: block;
+	    display: block;
 	}
 	header {
 	    position: fixed;
@@ -277,7 +277,7 @@ ul.nav i {
 	    margin-bottom: 10px;
 	}
 	ul.nav a {
-		font-family: pt-serif, serif;
+	    font-family: pt-serif, serif;
 	    font-size: 56px;
 	    text-transform: initial;
 	    font-weight: 400;
