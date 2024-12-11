@@ -21,14 +21,14 @@ h2 {
 }
 h2 span {
 	font-weight: 500;
-	color: #3B8A9D;
+	color: #4e9b99;
 }
 h3 {
     font-weight: 700;
     font-size: 56px;
     line-height: 1.1;
     margin-bottom: 20px;
-    color: #3B8A9D;
+    color: #4e9b99;
 }
 p {
     font-size: 17px;
@@ -38,7 +38,7 @@ p {
 }
 p.comment {
     font-weight: 600;
-    line-height: 1.5;
+    line-height: 1.3;
     font-style: italic;
     color: #aaa;
     margin-top: 20px;
@@ -53,7 +53,7 @@ p.comment a, p.comment a:hover {
     color: #aaa;
 }
 p a:hover, p.comment a:hover {
-    color: #3B8A9D;
+    color: #4e9b99;
 }
 /* —————————— LOGO —————————— */
 #asterisk, #letterG {
@@ -135,7 +135,7 @@ ul.nav a {
     letter-spacing: 0.5px;
 }
 ul.nav a:hover {
-    color: #3B8A9D;
+    color: #4e9b99;
 }
 ul.nav a.active {
     font-weight: 700;
@@ -272,10 +272,10 @@ ul.nav i {
 	    width: 260px;
 	    opacity: 0;
 	}
-	ul.nav li:nth-of-type(1), ul.nav li:nth-of-type(2) {
+	ul.nav li {
 	    display: block;
 	    width: 100%;
-	    margin-bottom: 10px;
+	    margin-bottom: 20px;
 	}
 	ul.nav a {
 		font-family: gelica, sans-serif;
