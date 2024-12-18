@@ -3,7 +3,7 @@ $(document).ready(()=> {
 	let facts = {
 		0: {
 			fact: 'I started learning how to code in 7th grade so I could have a cooler Myspace page than all of my friends.',
-			image: 'https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif'
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXhuejY0eThtZDNwYWxvdDF1NmFlMTV1YXk1MjJtMHdxeXNtdmtnMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rOdtJJS9Xf4TYx2aT8/giphy.gif'
 		},
 		1: {
 			fact: 'I’m a third-generation Cuban immigrant that can’t speak Spanish (I’m learning).',
@@ -30,7 +30,7 @@ $(document).ready(()=> {
 			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGJmbnIwZzBhM3d0amx2bm9kNHVuOGczYmZsMXU5MmtqOHl4cWZ6ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pVuja7BJl0Eow/giphy.gif'
 		},
 		7: {
-			fact: 'I’m vegan for the animals.',
+			fact: 'I’m vegan and I love animals.',
 			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTk4dnMzcWd0NmczeXd5NHl2Z3J2ZGNrZWVtbDN0Mnh5cjBwMXg1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ke28LeKwQU4rFLulNl/giphy.gif'
 		},
 		8: {
@@ -42,15 +42,11 @@ $(document).ready(()=> {
 			image: 'https://media.giphy.com/media/DQ9bqFm7hBTJS/giphy.gif'
 		},
 		10: {
-			fact: 'I’ve watched all 121 episodes of Lost *twice*.',
+			fact: 'I’ve watched all 121 episodes of Lost (twice).',
 			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmpqdjFxa2Fld2R2azVlZWQ4engwY2N5eDk0dGEwNzEycGJvNmtkMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CbNeTOSwGdpg4/giphy.gif'
 		},
 		11: {
-			fact: 'I’m currently watching Season 2 of Silo (after reading all 3 books).',
-			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmdmeXo3NDlvYjR0NjdpNmVoeDVzZ2hvenViYnkwYjQxY21hMDJ0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5wWf7GM807J2wdy7LZS/giphy.gif'
-		},
-		12: {
-			fact: 'The first concert I ever went to was Evanescence. My second concert was The Cheetah Girls.',
+			fact: 'The first concert I ever went to was Evanescence. The second was The Cheetah Girls.',
 			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmd5bWVtNzEyenB0OGI5YzQwYWtjdXI1a2x0a2s3d3Vzc2l6Z3hkeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs7IOGoGcZdVNIzK/giphy.gif'
 		}
 	};
