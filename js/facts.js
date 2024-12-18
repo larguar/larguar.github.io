@@ -2,64 +2,56 @@ $(document).ready(()=> {
 
 	let facts = {
 		0: {
-			fact: 'I’m not afraid to use open source fonts.',
-			image: 'https://media.giphy.com/media/5nrWPububC3XRg30ir/giphy.gif'
-		},
-		1: {
-			fact: 'I made an Instagram for my dog and I’m not ashamed => <a href="https://www.instagram.com/rengstagram/" target="_blank">@rengstagram</a>.',
-			image: 'https://media.giphy.com/media/ZZf4oUBf0bBvNNmaDF/giphy.gif'
-		},
-		2: {
-			fact: 'My favorite color is #222.',
-			image: 'https://media.giphy.com/media/ToMjGpvx0uOlm6H9RqU/giphy.gif'
-		},
-		3: {
-			fact: 'I’m a Virgo so I like it when things are perfect.',
-			image: 'https://media.giphy.com/media/AF2BK0kTirsHsbLeqQ/giphy.gif'
-		},
-		4: {
-			fact: 'I’m a Self Preservation Enneagram Type 3.',
-			image: 'https://media.giphy.com/media/7JTpNYu7oYGX98KJkL/giphy.gif'
-		},
-		5: {
-			fact: 'I definitely prefer Sketch (sorry Adobe).',
-			image: 'https://media.giphy.com/media/2vrGD7BtskWD8HB5BK/giphy.gif'
-		},
-		6: {
-			fact: 'Google Spreadsheets are my real passion.',
-			image: 'https://media.giphy.com/media/QnbnVPVWhzbCE/giphy.gif'
-		},
-		7: {
-			fact: 'I drink my coffee black.',
-			image: 'https://media.giphy.com/media/DQ9bqFm7hBTJS/giphy.gif'
-		},
-		8: {
-			fact: 'I’m vegan for the animals.',
-			image: 'https://media.giphy.com/media/bympeqWadSL3G/giphy.gif'
-		},
-		9: {
-			fact: 'My favorite weather is warm thunderstorms.',
-			image: 'https://media.giphy.com/media/2wX1ZDx4ddj4zupWAQ/giphy.gif'
-		},
-		10: {
-			fact: 'If I could have any superpower, I’d slow down time like they do in <a href="https://www.imdb.com/title/tt0157472/" target="_blank">Clockstoppers</a> so I could take more naps/breaks.',
-			image: 'https://media.giphy.com/media/HwmDZaI4YEeZ2/giphy.gif'
-		},
-		11: {
 			fact: 'I started learning how to code in 7th grade so I could have a cooler Myspace page than all of my friends.',
 			image: 'https://media.giphy.com/media/LmNwrBhejkK9EFP504/giphy.gif'
 		},
+		1: {
+			fact: 'I’m a third-generation Cuban immigrant that can’t speak Spanish (I’m learning).',
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZ3gydDN4cGdib3A4cm5idXFjdDFoZDR5cGZxdDRyajNodTUyYWRqayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rfqHxai5XJnuU/giphy.gif'
+		},
+		2: {
+			fact: 'I bought a smart water bottle to stay hydrated and my only motivation to drink water is my 300+ day streak.',
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnMwbjhyNm80c3hqdmV4b3h3dWRxc3hqNHhiNmszdTd1Mjd3ZzBiayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xULW8Nc2KygKVEcGk0/giphy.gif'
+		},
+		3: {
+			fact: 'I have a 900+ day streak on Duolingo.',
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExdnNvMDl2ZDYza2J6bWh5b2l0N2ZwNzAwMjI3eTVicWU0eWNrZGR3NCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/YpZ7QhrIRfKhsajAK8/giphy.gif'
+		},
+		4: {	
+			fact: 'I’m learning sign language for no reason in particular.',
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbTV2NHM3dzVtc2U0NHowMmVkM3hxMWpnbXd2YXlxYjVteGdqanlvayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xYRnmpVIIadxu/giphy.gif'
+		},
+		5: {
+			fact: 'I’m a Virgo so I like it when things are perfect.',
+			image: 'https://media.giphy.com/media/AF2BK0kTirsHsbLeqQ/giphy.gif'
+		},
+		6: {
+			fact: 'My favorite color is black.',
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaGJmbnIwZzBhM3d0amx2bm9kNHVuOGczYmZsMXU5MmtqOHl4cWZ6ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/pVuja7BJl0Eow/giphy.gif'
+		},
+		7: {
+			fact: 'I’m vegan for the animals.',
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTk4dnMzcWd0NmczeXd5NHl2Z3J2ZGNrZWVtbDN0Mnh5cjBwMXg1YSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Ke28LeKwQU4rFLulNl/giphy.gif'
+		},
+		8: {
+			fact: 'If I could have any superpower, I’d slow down time like they do in <a href="https://www.imdb.com/title/tt0157472/" target="_blank">Clockstoppers</a> so I could take more naps/breaks.',
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm5oa3FzazczY3Q1a3RxbDcwdWR2aW5waHF3Y3YycWxtcXgxdmg0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CITdQjMyUgCnvHNrJ1/giphy.gif'
+		},
+		9: {
+			fact: '10. I like my coffee like I like my clothes (black and basic).',
+			image: 'https://media.giphy.com/media/DQ9bqFm7hBTJS/giphy.gif'
+		},
+		10: {
+			fact: 'I’ve watched all 121 episodes of Lost *twice*.',
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmpqdjFxa2Fld2R2azVlZWQ4engwY2N5eDk0dGEwNzEycGJvNmtkMiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CbNeTOSwGdpg4/giphy.gif'
+		},
+		11: {
+			fact: 'I’m currently watching Season 2 of Silo (after reading all 3 books).',
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbmdmeXo3NDlvYjR0NjdpNmVoeDVzZ2hvenViYnkwYjQxY21hMDJ0OSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5wWf7GM807J2wdy7LZS/giphy.gif'
+		},
 		12: {
-			fact: 'I find it odd that some people *don’t* treat their dogs like children.',
-			image: 'https://media.giphy.com/media/2Y7kJKvzLFnNFPqd5u/giphy.gif'
-		},
-		13: {
-			fact: 'I would love to learn sign language one day.',
-			image: 'https://media.giphy.com/media/xTiTnDQ4eawSG7WB6o/giphy.gif'
-		},
-		14: {
-			fact: 'I’m currently re-watching SVU.',
-			image: 'https://media.giphy.com/media/3o752fFQRQh0YW4EVi/giphy.gif'
+			fact: 'The first concert I ever went to was Evanescence. My second concert was The Cheetah Girls.',
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcmd5bWVtNzEyenB0OGI5YzQwYWtjdXI1a2x0a2s3d3Vzc2l6Z3hkeSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3ohs7IOGoGcZdVNIzK/giphy.gif'
 		}
 	};
 
