@@ -38,7 +38,7 @@ $(document).ready(()=> {
 			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm5oa3FzazczY3Q1a3RxbDcwdWR2aW5waHF3Y3YycWxtcXgxdmg0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CITdQjMyUgCnvHNrJ1/giphy.gif'
 		},
 		9: {
-			fact: '10. I like my coffee like I like my clothes (black and basic).',
+			fact: 'I like my coffee like I like my clothes (black and basic).',
 			image: 'https://media.giphy.com/media/DQ9bqFm7hBTJS/giphy.gif'
 		},
 		10: {
