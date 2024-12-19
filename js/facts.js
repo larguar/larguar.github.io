@@ -55,10 +55,6 @@ $(document).ready(()=> {
 	let i = Math.floor(Math.random() * Object.keys(facts).length);	
 	if (i >= 0) {
 		let num = i + 1;
-		if (num < 10) {
-		  num = "0" + num.toString();
-		}
-		let num = i
 		let p = $('<p>').addClass('comment').html('// icebreaker ' + num + ': ' + facts[i].fact);
 		let tooltip = $('<div>').attr('id', 'tooltip');
 		$('#main .col').append(p.append(tooltip));
