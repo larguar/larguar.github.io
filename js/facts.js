@@ -2,8 +2,8 @@ $(document).ready(()=> {
 
 	let facts = {
 		0: {
-			fact: 'I started learning how to code in 7th grade so I could have a cooler Myspace page than all of my friends.',
-			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExaXhuejY0eThtZDNwYWxvdDF1NmFlMTV1YXk1MjJtMHdxeXNtdmtnMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/rOdtJJS9Xf4TYx2aT8/giphy.gif'
+			fact: 'I started learning how to code in 7th grade so my Myspace page would be cooler than all of my friends’.',
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2J6MXE5MGduOHY2MWQ1d2JxYmp0enR2c29nejIwOWt5cm12ODkwZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ekjmhJUGHJm7FC4Juo/giphy.gif'
 		},
 		1: {
 			fact: 'I’m a third-generation Cuban immigrant that can’t speak Spanish (I’m learning).',
@@ -11,7 +11,7 @@ $(document).ready(()=> {
 		},
 		2: {
 			fact: 'I bought a smart water bottle to stay hydrated and my only motivation to drink water is my 300+ day streak.',
-			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExMnMwbjhyNm80c3hqdmV4b3h3dWRxc3hqNHhiNmszdTd1Mjd3ZzBiayZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/xULW8Nc2KygKVEcGk0/giphy.gif'
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExeTM0OXJzcW40MW91YXpyZ2kzOGxkbXFsbHZ3ZnBrbjJ5eTR6OGF2NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1dJtV4lVcN8jxh2mxG/giphy.gif'
 		},
 		3: {
 			fact: 'I have a 900+ day streak on Duolingo.',
@@ -23,7 +23,7 @@ $(document).ready(()=> {
 		},
 		5: {
 			fact: 'I’m a Virgo so I like it when things are perfect.',
-			image: 'https://media.giphy.com/media/AF2BK0kTirsHsbLeqQ/giphy.gif'
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHhoa3E5MnQ0NXAzMG9ybnVlYTN0ZXhneWV4dm1uZ3d2bjNxZmM3YyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/dSdSzjYn5LpENYPc3G/giphy-downsized-large.gif'
 		},
 		6: {
 			fact: 'My favorite color is black.',
@@ -35,7 +35,7 @@ $(document).ready(()=> {
 		},
 		8: {
 			fact: 'If I could have any superpower, I’d slow down time like they do in <a href="https://www.imdb.com/title/tt0157472/" target="_blank">Clockstoppers</a> so I could take more naps/breaks.',
-			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExbm5oa3FzazczY3Q1a3RxbDcwdWR2aW5waHF3Y3YycWxtcXgxdmg0cCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CITdQjMyUgCnvHNrJ1/giphy.gif'
+			image: 'https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXZuMDR1ZDVqeWViOTVibWd3ZWkwNDdldWU4Mmt0ZXk2MGZxeW9zYSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26gJA86nNiY4a39Ze/giphy.gif'
 		},
 		9: {
 			fact: 'I like my coffee like I like my clothes (black and basic).',
