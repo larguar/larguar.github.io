@@ -54,8 +54,7 @@ $(document).ready(()=> {
 
 	let i = Math.floor(Math.random() * Object.keys(facts).length);	
 	if (i >= 0) {
-		let num = i + 1;
-		let p = $('<p>').addClass('comment').html('// icebreaker ' + num + ': ' + facts[i].fact);
+		let p = $('<p>').addClass('comment').html('// icebreaker: ' + facts[i].fact);
 		let tooltip = $('<div>').attr('id', 'tooltip');
 		$('#main .col').append(p.append(tooltip));
 		p.on('mouseover', () => tooltip.html('<img src="' + facts[i].image + '">'));
