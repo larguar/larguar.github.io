@@ -3,7 +3,7 @@ It’s hard enough to keep your portfolio up to date when it’s built through a
 
 Utilizing the Behance API, I figured out how to automatically pull my projects from Behance. Since I’m expected to update the work on both my website and Behance, this was the most efficient route for me to take. Now, when I make any updates on Behance – whether I’m adding a new project or reordering existing ones – my website automatically reflects those changes.
 
-Finally, to make my portfolio website uniquely mine, I sprinkled in some personality through: icebreakers that update when you refresh the page, selected at random from a list of fun facts about me; accompanying GIFs that appear when you hover over each icebreaker; and a logo that rotates on page scroll.
+Finally, to make my portfolio website uniquely mine, I sprinkled in some personality through: fun facts that update when you refresh the page, selected at random from a list of facts about me; accompanying GIFs that appear when you hover over each fun fact; and a logo that rotates on page scroll.
 
 ![HTML Badge](https://img.shields.io/badge/-HTML-47a9a6) ![CSS Badge](https://img.shields.io/badge/-CSS-47a9a6) ![JavaScript Badge](https://img.shields.io/badge/-JavaScript-47a9a6) ![API Badge](https://img.shields.io/badge/-API-47a9a6)
 
