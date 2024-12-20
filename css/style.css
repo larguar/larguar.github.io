@@ -181,6 +181,7 @@ ul.nav i {
 /* —————————— PROJECTS —————————— */
 .projects .col .project-card {
     height: 400px;
+    height: calc(100vw / 3 * 0.8);
 }			
 .projects .col {
     padding: 0;
@@ -289,6 +290,9 @@ ul.nav i {
 	    font-size: 32px;
 	    margin-right: 20px;
 	}
+	.projects .col .project-card {
+	    height: calc(100vw / 2 * 0.8);
+	}
 }
 @media screen and (max-width: 575px) {
 	button.menu-toggle {
@@ -318,6 +322,9 @@ ul.nav i {
 	.content {
 	    padding-top: 50px;
 	    padding-bottom: 50px;
+	}
+	.projects .col .project-card {
+	    height: calc(100vw * 0.8);
 	}
 }
 @media screen and (max-width: 476px) {
